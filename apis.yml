@@ -1,7 +1,11 @@
 aid: cameron-international
-url: https://raw.githubusercontent.com/api-evangelist/cameron-international/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/cameron-international/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.cameron-international.com
+description: >-
+  Cameron International was a provider of flow equipment products, systems, and services
+  to oil, gas, and process industries before being acquired by Schlumberger.
