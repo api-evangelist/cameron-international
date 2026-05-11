@@ -36,6 +36,12 @@ common:
     url: https://www.software.slb.com/delfi/what-is-delfi
   - type: News
     url: https://www.slb.com/news
+  - type: Integrations
+    url: https://www.slb.com/partners
+integrations:
+  - name: Embedded Partners and Suppliers
+  - name: Alliance Partners
+  - name: Digital Platform Partners
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
