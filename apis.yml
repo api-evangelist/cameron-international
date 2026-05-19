@@ -26,6 +26,8 @@ description: >-
   rather than through a standalone Cameron developer program.
 apis: []
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/cameron
   - type: Website
     url: https://www.slb.com/products-and-services/delivering-domain-expertise/surface/cameron-surface
   - type: ParentCompany
