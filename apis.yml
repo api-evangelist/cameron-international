@@ -27,6 +27,10 @@ description: >-
   rather than through a standalone Cameron developer program.
 apis: []
 common:
+  - type: VulnerabilityDisclosure
+    url: security/cameron-international-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/cameron-international-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/cameron
   - type: Website
