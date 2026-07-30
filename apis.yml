@@ -2,7 +2,18 @@ aid: cameron-international
 name: Cameron International
 url: >-
   https://raw.githubusercontent.com/api-evangelist/cameron-international/refs/heads/main/apis.yml
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cameron-international.png
 type: Index
 tags:
   - Oil and Gas
