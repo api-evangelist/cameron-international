@@ -1,4 +1,4 @@
-generated: '2026-07-11'
+generated: '2026-09-05'
 method: probed
 source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
 hosts:
@@ -12,12 +12,12 @@ domains:
 - domain: slb.com
   dnssec: false
   caa:
-  - 0 issue "digicert.com"
-  - 0 issue "entrust.net"
-  - 0 issue "sectigo.com"
   - 0 issuewild "digicert.com"
   - 0 issuewild "entrust.net"
   - 0 iodef "mailto:pki-admin-manager@slb.com"
+  - 0 issue "amazon.com"
+  - 0 issue "digicert.com"
+  - 0 issue "entrust.net"
   spf: true
   dmarc: true
   dmarc_policy: reject

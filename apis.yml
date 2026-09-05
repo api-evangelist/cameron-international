@@ -35,7 +35,7 @@ tags:
   - Fortune 500
 access: 3rd-Party
 created: '2026-03-23'
-modified: '2026-04-23'
+modified: '2026-09-05'
 position: Producing
 specificationVersion: '0.23'
 description: >-
@@ -56,7 +56,7 @@ common:
   - type: LinkedIn
     url: https://www.linkedin.com/company/cameron
   - type: Website
-    url: https://www.slb.com/products-and-services/delivering-domain-expertise/surface/cameron-surface
+    url: https://www.slb.com/legacy-companies/cameron-products
   - type: ParentCompany
     url: https://www.slb.com/
   - type: DeveloperPortal
@@ -67,6 +67,12 @@ common:
     url: https://www.slb.com/news
   - type: Integrations
     url: https://www.slb.com/partners
+  - type: WellKnown
+    url: well-known/cameron-international-well-known.yml
+  - type: SecurityTxt
+    url: well-known/cameron-international-security.txt
+  - type: Security
+    url: security/cameron-international-vulnerability-disclosure.yml
 integrations:
   - name: Embedded Partners and Suppliers
   - name: Alliance Partners
@@ -74,3 +80,35 @@ integrations:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    Cameron International no longer exists as an operating company — its own domain
+    www.c-a-m.com and the cameron.slb.com subdomain both 301 to SLB's
+    /legacy-companies/cameron-products page, and STEP 0b contract discovery
+    (openapi/swagger/api-docs, GraphQL, MCP tools/list, agent-card and OGC probes)
+    returned clean 404s on every Cameron and SLB host including the DELFI developer
+    portal, which serves only an Angular single-page shell.
+  evidence:
+    - url: https://www.c-a-m.com/
+      status: 301
+    - url: https://cameron.slb.com/
+      status: 301
+    - url: https://www.slb.com/products-and-services/delivering-domain-expertise/surface/cameron-surface
+      status: 404
+    - url: https://developer.delfi.slb.com/openapi.json
+      status: 404
+    - url: https://www.slb.com/.well-known/api-catalog
+      status: 404
+    - url: https://www.slb.com/.well-known/security.txt
+      status: 200
+  checked: '2026-09-05'
+x-parent: schlumberger
+x-relationship: acquisition
+x-acquired: 2016

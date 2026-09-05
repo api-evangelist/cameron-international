@@ -1,0 +1,123 @@
+generated: '2026-09-05'
+method: probed
+source: >-
+  Live anonymous HTTP probes of every host this record knows — the Cameron legacy
+  domains (c-a-m.com, cameron.slb.com), the operating parent host (www.slb.com,
+  slb.com), the DELFI developer portal host (developer.delfi.slb.com) and the DELFI
+  software host (www.software.slb.com).
+note: >-
+  Cameron International has no host of its own. www.c-a-m.com and cameron.slb.com
+  both 301 to https://www.slb.com/legacy-companies/cameron-products, so the only
+  host that can serve a well-known document on Cameron's behalf is SLB's, the
+  acquirer that operates the brand. The single document served anywhere on that set
+  is SLB's RFC 9116 security.txt at www.slb.com; every other named path returns a
+  clean 404 (or a redirect off the legacy domains). No api-catalog, no OpenID/OAuth
+  discovery, no ai-plugin, no agent card.
+hosts:
+  - host: www.slb.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        file: cameron-international-security.txt
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: slb.com
+    note: apex redirects to www.slb.com for every path probed
+    documents:
+      - path: /.well-known/security.txt
+        status: 302
+      - path: /.well-known/openid-configuration
+        status: 302
+      - path: /.well-known/oauth-authorization-server
+        status: 302
+      - path: /.well-known/api-catalog
+        status: 302
+      - path: /.well-known/ai-plugin.json
+        status: 302
+  - host: www.c-a-m.com
+    note: >-
+      Cameron's own historic domain; every path 301s to
+      https://www.slb.com/legacy-companies/cameron-products
+    documents:
+      - path: /.well-known/security.txt
+        status: 301
+      - path: /.well-known/openid-configuration
+        status: 301
+      - path: /.well-known/oauth-authorization-server
+        status: 301
+      - path: /.well-known/api-catalog
+        status: 301
+      - path: /.well-known/ai-plugin.json
+        status: 301
+      - path: /.well-known/agent-card.json
+        status: 301
+      - path: /.well-known/agent.json
+        status: 301
+  - host: c-a-m.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 301
+      - path: /.well-known/api-catalog
+        status: 301
+      - path: /.well-known/ai-plugin.json
+        status: 301
+  - host: cameron.slb.com
+    note: redirects to the SLB legacy-companies Cameron page
+    documents:
+      - path: /.well-known/security.txt
+        status: 301
+      - path: /.well-known/openid-configuration
+        status: 301
+      - path: /.well-known/oauth-authorization-server
+        status: 301
+      - path: /.well-known/api-catalog
+        status: 301
+      - path: /.well-known/ai-plugin.json
+        status: 301
+      - path: /.well-known/agent-card.json
+        status: 301
+      - path: /.well-known/agent.json
+        status: 301
+  - host: developer.delfi.slb.com
+    note: >-
+      SLB DELFI developer portal; an Angular single-page shell (838 bytes) that
+      answers 200 for any /assets/* path and a clean 404 for every well-known path.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+  - host: www.software.slb.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 302
+      - path: /.well-known/openid-configuration
+        status: 302
+      - path: /.well-known/oauth-authorization-server
+        status: 302
+      - path: /.well-known/api-catalog
+        status: 302
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
