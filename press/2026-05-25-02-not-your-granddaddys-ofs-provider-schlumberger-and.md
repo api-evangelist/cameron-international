@@ -1,7 +1,9 @@
 ---
 title: 'Not Your Granddaddy''s OFS Provider: Schlumberger and ...'
 url: https://www.oilandgas360.com/not-your-granddaddys-ofs-provider-schlumberger-and-cameron-are-primed-to-change-how-its-done-at-the-wellhead/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Cameron International" press release artificial intelligence'
 position: 2
 source: serpapi-google

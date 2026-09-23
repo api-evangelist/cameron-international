@@ -1,7 +1,9 @@
 ---
 title: Schlumberger to buy oilfield gear maker Cameron in $14.8 ...
 url: https://www.reuters.com/article/business/schlumberger-to-buy-oilfield-gear-maker-cameron-in-148-billion-deal-idUSKCN0QV11T/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Cameron International" press release artificial intelligence'
 position: 4
 source: serpapi-google

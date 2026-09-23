@@ -1,7 +1,9 @@
 ---
 title: 'Forbes Earnings Preview: Cameron International'
 url: https://www.forbes.com/sites/narrativescience/2014/01/28/forbes-earnings-preview-cameron-international-6/
-date: '2026-05-25'
+published: '2014-01-28'
+date_basis: url-derived
+harvested: '2026-05-25'
 query: '"Cameron International" press release artificial intelligence'
 position: 5
 source: serpapi-google
